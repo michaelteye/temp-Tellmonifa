@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Tellmonifa</title>
+
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#ff5e3a">
+
+    <!-- Main Font -->
+   
+    <link rel="icon" sizes="192x192" type="image/png" href="assets/icons/android-icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/favicon-196x196.png" sizes="196x196" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/selectize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tether-theme-arrows.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/drop-theme-basic.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon.css">
+
+
+    <!-- Main Styles CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/videojs/video-js.min.css">
+
+    
+
+
+</head>
+
+
+<body  class="sign-page">
+
+
+<div  style="height: 2rem"></div>
+
+<div class="container">
+		<div class="col-lg-8 pd-s-0 " style="margin: 0 auto">
+		<div class="top-logo">
+			<img src="assets/img/logo-color.png">
+		</div>
+			<!-- Login-Registration Form  -->
+			
+			<div class="registration-login-form">
+				<div class="reg title h6">Connect to a survivor or an expert on tellmonifa</div>
+				<form id="form-signup" class="content">
+					<div id="signup-err" class="err alert alert-danger">
+									
+					</div>
+					<div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group label-floating is-empty">
+									<label class="control-label">Incognito Name</label>
+									<input autocomplete="off" class="form-control" placeholder="" type="text" name="in-name" id="in-name" required data-toggle="popover" data-trigger="focus"  data-html="true" data-placement="auto" data-content="Providing an 'incognito name' helps make sure your identity is concealed thus you remain anonymous to the community members.<br>Incognito Name can only contain alphanumeric characters, underscore and dot.<br>Underscore and dot can't be at the end or start.<br>Underscore and dot can't be next to each other.<br>Underscore or dot can't be used multiple times in a row.<br>Number of characters must be between 6 to 12." >
+									<span id="in-name-err" class="err">
+										
+									</span>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group label-floating is-empty">
+									<label class="control-label">Your Email Address</label>
+									<input autocomplete="off" class="form-control" placeholder="" type="text" name="contact" id="contact" required data-toggle="popover" data-trigger="focus"  data-placement="auto" data-content='You will need this during login or account reset.'>
+									<span id="contact-err" class="err">
+										
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group label-floating is-empty">
+									<label class="control-label">Your Password</label>
+									<input class="form-control visi" placeholder="" type="password" name="password"  id="password"  required>
+									<span toggle=".visi" class="fas fa-eye field-icon toggle-password"></span>
+									<span id="password-err" class="err">
+												
+									</span>
+									
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group label-floating is-empty">
+									<label class="control-label">Confirm Password</label>
+									<input autocomplete="off" class="form-control visi" placeholder="" type="password" name="confirm-password" id="confirm-password"  min="8" required="">
+									<span id="confirm-password-err" class="err">
+										
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group date-time-picker label-floating">
+									<label class="control-label">Birth Date</label>
+									<input id="birth-date" name="birth-date">
+									<div class="input-group-addon">
+										<svg class="olymp-calendar-icon"><use xlink:href="assets/svg-icons/sprites/icons.svg#olymp-calendar-icon"></use></svg>
+									</div>
+									<span id="birth-date-err" class="err">
+										
+									</span>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group label-floating is-select">
+									<label class="control-label">Your Gender</label>
+									<select  name="gender" class="form-control">
+										<option  value="1">Male</option>
+										<option  value="2">Female</option>
+										<option  value="0">Unspecified</option>
+									</select>
+									<span id="gender-err" class="err">
+										
+									</span>
+								</div>	
+							</div>
+						</div>
+						
+						<div class="remember">
+							<div class="checkbox">
+								<label style="text-align: center;">
+									We asssume you have accepted  the <a href="terms-conditions.html">Terms and Conditions</a> of this website by clicking Join Now.
+								</label>
+							</div>
+						</div>
+						<div style="text-align: center;">
+							<a href="javscript:void(0)" id="signup-btn" class="btn btn-primary btn-lg ">Join Now</a>
+						</div>
+
+						<p style="text-align: center;">Already a member? <a href="signin.html">Sign In</a> </p>
+					</div>
+				</form>
+					
+				
+			</div>
+			
+			<!-- ... end Login-Registration Form  -->	
+		</div>
+	
+</div>
+
+
+<div class="tm-footer-menu">
+	<div class="container">
+		<div class="links">
+			<a href="Donate" >Donate</a>
+
+			<a href="about-us" >About</a>
+
+			<a  href="signup">Signup</a>
+
+			<a href="sigin" >Signin</a>
+
+			<a href="help" >Help Center</a>
+
+			<a href="terms-conditions" >Terms & Conditions</a>
+
+			<a href="events" >Events</a>
+
+			<a href="privacy-policy"  >Privacy Policy</a>
+
+			<a href="cookies" > Cookies</a>
+		
+			<a class="">Tellmonifa  ©  
+	        	<span id="copyright">
+					<script>
+	                	document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+	                </script>
+	            </span> 
+	        </a>
+	    </div>
+	</div>
+</div>
+
+
+
+
+<!-- JS Scripts -->
+            
+    <script>
+        function _upload(){
+            document.getElementById('file_upload_id').click();
+        }
+    </script>
+
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.mousewheel.js"></script>
+    <script src="assets/js/perfect-scrollbar.js"></script>
+    <script src="assets/js/jquery.matchHeight.js"></script>
+    <script src="assets/js/svgxuse.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/Headroom.js"></script>
+    <script src="assets/js/velocity.js"></script>
+    <script src="assets/js/ScrollMagic.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.countTo.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/selectize.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/simplecalendar.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <script src="assets/js/ajax-pagination.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <script src="assets/js/chartjs-plugin-deferred.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/run-chart.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/plugins/videojs/video.min.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/drop.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/base-init.js"></script>
+<script src="assets/custom/js/util.js"></script>
+<!-- JS Scripts Ends -->
+
+</body>
+</html>
